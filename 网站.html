@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>段文希 - 数字艺术创作者</title>
+  <!-- 引入Font Awesome图标库 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- 引入ECharts库 -->
+  <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+  <!-- 引入自定义样式（可根据需要调整） -->
+  <style>
+    body { background: #18181b; color: #fff; font-family: '微软雅黑', 'Arial', sans-serif; }
+    .title-font { letter-spacing: 2px; }
+    .glass-effect { background: rgba(255,255,255,0.08); box-shadow: 0 4px 32px rgba(0,0,0,0.12); backdrop-filter: blur(8px); }
+    .bg-dark { background: #23232b; }
+    .text-secondary { color: #00F5FF; }
+    .text-primary { color: #6e07f3; }
+    .rounded-button { border-radius: 999px; }
+    .bg-primary { background: #6e07f3; color: #fff; }
+    .rounded-lg { border-radius: 1rem; }
+    .mb-2 { margin-bottom: .5rem; }
+    .mb-4 { margin-bottom: 1rem; }
+    .mb-6 { margin-bottom: 1.5rem; }
+    .mb-12 { margin-bottom: 3rem; }
+    .py-20 { padding-top: 5rem; padding-bottom: 5rem; }
+    .py-8 { padding-top: 2rem; padding-bottom: 2rem; }
+    .px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+    .p-4 { padding: 1rem; }
+    .p-8 { padding: 2rem; }
+    .max-w-7xl { max-width: 80rem; }
+    .max-w-2xl { max-width: 42rem; }
+    .mx-auto { margin-left: auto; margin-right: auto; }
+    .text-center { text-align: center; }
+    .font-bold { font-weight: bold; }
+    .font-semibold { font-weight: 600; }
+    .text-4xl { font-size: 2.25rem; }
+    .text-xl { font-size: 1.25rem; }
+    .grid { display: grid; }
+    .grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+    .gap-12 { gap: 3rem; }
+    .items-center { align-items: center; }
+    .w-full { width: 100%; }
+    .space-x-8 > :not(:last-child) { margin-right: 2rem; }
+    .border-t { border-top: 1px solid; }
+    .border-gray-800 { border-color: #27272a; }
+    .text-gray-300 { color: #d1d5db; }
+    .text-gray-400 { color: #9ca3af; }
+    .transition-colors { transition: color 0.2s; }
+    .hover\:text-primary:hover { color: #6e07f3; }
+    @media (max-width: 900px) {
+      .grid-cols-2 { grid-template-columns: 1fr; }
+      .gap-12 { gap: 1.5rem; }
+    }
+  </style>
+</head>
+<body>
+  /**
+   * @section 实验项目
+   * 展示AI艺术生成实验和相关图片
+   */
+  <section id="experiments" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold title-font mb-12 text-center">实验项目</h2>
+      <div class="grid grid-cols-2 gap-12">
+        <div class="glass-effect p-8 rounded-lg">
+          <pre class="text-secondary mb-6">
+<span class="text-primary">class</span> NeuralArtGenerator {
+  <span class="text-gray-400">// 基于 AI 的艺术生成实验</span>
+  generate() {
+    return new Promise(resolve =&gt; {
+      <span class="text-gray-400">// 创造性编码</span>
+    });
+  }
+}</pre>
+          <button class="px-6 py-3 bg-primary rounded-button mt-4">查看演示</button>
+        </div>
+        <div>
+          <img src="https://ai-public.mastergo.com/ai/img_res/3b36a10b7afa31fa838c1fdb35899c19.jpg" class="w-full rounded-lg" alt="Experiment">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  /**
+   * @section 关于我
+   * 个人简介、教育背景及照片
+   */
+  <section id="about" class="py-20 bg-dark">
+    <div class="max-w-7xl mx-auto px-6">
+      <div class="grid grid-cols-2 gap-12 items-center">
+        <div>
+          <img src="https://ai-public.mastergo.com/ai/img_res/3f3b8cc91392f6a47ff29ae9deeafbae.jpg" class="w-full rounded-lg" alt="Profile">
+        </div>
+        <div class="glass-effect p-8 rounded-lg">
+          <h2 class="text-4xl font-bold title-font mb-6">关于我</h2>
+          <p class="text-gray-300 mb-6">我是一名数字艺术创作者，专注于跨媒介交互设计与沉浸式体验创作。通过结合技术与艺术，我致力于探索数字世界中的新型感知方式。</p>
+          <div class="mb-6">
+            <h3 class="text-xl font-semibold mb-4">教育背景</h3>
+            <div class="glass-effect p-4 rounded-lg mb-4">
+              <p class="font-semibold">数字媒体艺术硕士</p>
+              <p class="text-gray-400">中央美术学院 &middot; 2020-2023</p>
+            </div>
+            <div class="glass-effect p-4 rounded-lg">
+              <p class="font-semibold">交互设计学士</p>
+              <p class="text-gray-400">清华大学 &middot; 2016-2020</p>
+            </div>
+          </div>
+          <button class="px-6 py-3 bg-primary rounded-button">下载简历</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  /**
+   * @section 联系我
+   * 社交链接与邮箱联系方式
+   */
+  <section id="contact" class="py-20">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-4xl font-bold title-font mb-12 text-center">联系我</h2>
+      <div class="glass-effect p-8 rounded-lg max-w-2xl mx-auto">
+        <div class="flex items-center justify-center space-x-8 mb-8">
+          <a href="#" class="text-4xl text-secondary hover:text-primary transition-colors">
+            <i class="fab fa-behance"></i>
+          </a>
+          <a href="#" class="text-4xl text-secondary hover:text-primary transition-colors">
+            <i class="fab fa-dribbble"></i>
+          </a>
+          <a href="#" class="text-4xl text-secondary hover:text-primary transition-colors">
+            <i class="fab fa-artstation"></i>
+          </a>
+        </div>
+        <div class="text-center">
+          <p class="text-xl mb-4">期待与您合作</p>
+          <a href="mailto:contact@duanwenxi.com" class="text-secondary hover:text-primary transition-colors">contact@duanwenxi.com</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  /**
+   * @section 页脚
+   * 版权信息
+   */
+  <footer class="py-8 border-t border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 text-center text-gray-400">
+      <p>&copy; 2023 段文希. All rights reserved.</p>
+    </div>
+  </footer>
+
+  /**
+   * @function 能力雷达图
+   * 使用ECharts展示个人能力评估
+   */
+  <script>
+    // @JSDoc: 初始化ECharts雷达图
+    const skillChart = echarts.init(document.getElementById('skillChart'));
+    const option = {
+      radar: {
+        indicator: [
+          { name: '创意概念', max: 100 },
+          { name: '技术实现', max: 100 },
+          { name: '视觉叙事', max: 100 },
+          { name: '用户体验', max: 100 },
+          { name: '跨媒介整合', max: 100 },
+          { name: 'AI协作', max: 100 }
+        ],
+        splitArea: {
+          show: true,
+          areaStyle: {
+            color: ['rgba(110, 7, 243, 0.1)', 'rgba(0, 245, 255, 0.1)']
+          }
+        }
+      },
+      series: [{
+        type: 'radar',
+        data: [{
+          value: [95, 85, 90, 80, 88, 92],
+          name: '能力评估',
+          areaStyle: {
+            color: 'rgba(110, 7, 243, 0.4)'
+          },
+          lineStyle: {
+            color: '#00F5FF'
+          }
+        }]
+      }],
+      animation: false
+    };
+    skillChart.setOption(option);
+  </script>
+</body>
+</html>
